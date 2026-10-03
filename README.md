@@ -18,17 +18,11 @@ In forward propagation, the input flows through the hidden layer to compute a pr
 
 For each sample, the network computes:
 
-$$
-Z_1 = XW_1 + b_1
-$$
+Z₁ = XW₁ + b₁
 
-$$
-A_1 = \operatorname{ReLU}(Z_1)
-$$
+A₁ = ReLU(Z₁)
 
-$$
-\hat{y} = A_1W_2 + b_2
-$$
+ŷ = A₁W₂ + b₂
 
 That means that first the input values and weights are combined using a dot product and then the bias is added. The result is passed through the ReLU activation function and then combined again with another weight matrix and bias to produce the final prediction.
 
